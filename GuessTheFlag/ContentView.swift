@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-// Create Custom Modifier for blue Title
+// Create Custom Modifier for blue title
 struct BlueTitle: ViewModifier {
     func body(content: Content) -> some View {
         content
@@ -64,7 +64,8 @@ struct ContentView: View {
                     Button(action: {
                         self.flagTapped(number)
                     }) {
-                      /*  Image(self.countries[number])
+                    // Image stlying code replaced by custom modifier, kept here for future reference
+                    /* Image(self.countries[number])
                             .renderingMode(.original)
                             .clipShape(Capsule())
                             .overlay(Capsule().stroke(Color .black, lineWidth: 1))
